@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Frosty Bliss - Ice Cream Shop</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Floating Decorations -->
+
+<div class="float-decoration sparkle sparkle-1">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <path
+            d="M20 0L22.5 17.5L40 20L22.5 22.5L20 40L17.5 22.5L0 20L17.5 17.5L20 0Z"
+            fill="#FFB4D9"
+            opacity="0.7" />
+
+    </svg>
+</div>
+
+
+<div class="float-decoration sparkle sparkle-2">
+
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <path
+            d="M15 0L17 13L30 15L17 17L15 30L13 17L0 15L13 13L15 0Z"
+            fill="#C9B6FF"
+            opacity="0.7" />
+
+    </svg>
+
+</div>
+
+
+<div class="float-decoration sparkle sparkle-3">
+
+    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <path
+            d="M17.5 0L19.5 15.5L35 17.5L19.5 19.5L17.5 35L15.5 19.5L0 17.5L15.5 15.5L17.5 0Z"
+            fill="#AEE8D1"
+            opacity="0.7" />
+
+    </svg>
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="header-wrapper">
+        <!-- Navigation -->
+         <div class="container header-container">
+
+            <a href="index.html" class="logo">
+                🍦 Frosty Bliss
+            </a>
+
+            <nav class="nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Ice Creams</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+
+                <a href="cart.html" class="cart-link active">
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </a>
+
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+            </nav>
+
+            <button class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section
+    class="hero-wrapper"
+    id="home">
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="special-badge">
+                🍦 FRESHLY MADE DAILY
+            </span>
+
+            <h1>
+                Happiness Served
+                One Scoop at a Time! 🍨
+            </h1>
+
+            <p>
+                Discover delicious handcrafted ice creams,
+                creamy sundaes, refreshing flavors and
+                sweet treats made to brighten your day.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#products"
+                    class="btn btn-primary">
+
+                    Explore Ice Creams
+
+                </a>
+
+
+                <a
+                    href="#about"
+                    class="btn btn-secondary">
+
+                    Our Story
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero Illustration -->
+
+        <div class="hero-image">
+
+            <div class="hero-image-container">
+
+                <svg
+                    class="hero-illustration active"
+                    viewBox="0 0 500 500"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <!-- Large Ice Cream Cone -->
+
+                    <path
+                        d="M170 270L330 270L275 450L225 450L170 270Z"
+                        fill="#E8B887" />
+
+                    <!-- Cone Pattern -->
+
+                    <path
+                        d="M190 285L280 420
+                           M215 280L300 390
+                           M180 320L260 430
+                           M250 280L315 350"
+                        stroke="#C99A65"
+                        stroke-width="5"
+                        opacity="0.8" />
+
+
+                    <!-- Strawberry Scoop -->
+
+                    <circle
+                        cx="250"
+                        cy="200"
+                        r="90"
+                        fill="#FFB4D9" />
+
+                    <circle
+                        cx="200"
+                        cy="215"
+                        r="35"
+                        fill="#FFD4E8"
+                        opacity="0.8" />
+
+
+                    <!-- Vanilla Scoop -->
+
+                    <circle
+                        cx="175"
+                        cy="245"
+                        r="65"
+                        fill="#FFF3C7" />
+
+
+                    <!-- Blueberry Scoop -->
+
+                    <circle
+                        cx="325"
+                        cy="245"
+                        r="65"
+                        fill="#C9B6FF" />
+
+
+                    <!-- Face -->
+
+                    <circle
+                        cx="230"
+                        cy="190"
+                        r="6"
+                        fill="#6B5578" />
+
+                    <circle
+                        cx="270"
+                        cy="190"
+                        r="6"
+                        fill="#6B5578" />
+
+                    <path
+                        d="M235 210Q250 225 265 210"
+                        stroke="#6B5578"
+                        stroke-width="4"
+                        stroke-linecap="round" />
+
+
+                    <!-- Sprinkles -->
+
+                    <rect
+                        x="210"
+                        y="150"
+                        width="8"
+                        height="20"
+                        rx="4"
+                        fill="#AEE8D1"
+                        transform="rotate(-20 210 150)" />
+
+                    <rect
+                        x="280"
+                        y="155"
+                        width="8"
+                        height="20"
+                        rx="4"
+                        fill="#FF7FAF"
+                        transform="rotate(25 280 155)" />
+
+                    <rect
+                        x="250"
+                        y="135"
+                        width="8"
+                        height="20"
+                        rx="4"
+                        fill="#FFD166"
+                        transform="rotate(10 250 135)" />
+
+
+                    <!-- Decorative Hearts -->
+
+                    <path
+                        d="M100 150
+                           C85 135 60 155 100 185
+                           C140 155 115 135 100 150Z"
+                        fill="#FF7FAF" />
+
+                    <path
+                        d="M400 300
+                           C385 285 360 305 400 335
+                           C440 305 415 285 400 300Z"
+                        fill="#AEE8D1" />
+
+
+                    <!-- Sparkles -->
+
+                    <path
+                        d="M90 330L94 344L108 348L94 352L90 366L86 352L72 348L86 344Z"
+                        fill="#C9B6FF" />
+
+                    <path
+                        d="M410 120L414 134L428 138L414 142L410 156L406 142L392 138L406 134Z"
+                        fill="#FFB4D9" />
+
+                </svg>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- ================= TODAY'S SPECIAL ================= -->
+
+<section class="todays-special">
+
+    <div class="special-container">
+
+        <div style="text-align:center;">
+
+            <span class="special-badge">
+                ⚡ LIMITED TIME OFFER ⚡
+            </span>
+
+            <h2
+                class="section-title"
+                style="margin-bottom:0.5rem;">
+
+                Today's Special
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                A delicious deal made especially for you! 🍦
+
+            </p>
+
+        </div>
+
+
+        <div class="special-content">
+
+
+            <div class="special-image">
+
+                <img
+                    src="images/chocolate-sundae.jpg"
+                    alt="Chocolate Sundae"
+                    onerror="this.style.display='none';">
+
+                <div
+                    style="
+                    font-size:120px;
+                    text-align:center;
+                    padding:40px;">
+                    🍨
+                </div>
+
+                <span class="special-tag">
+                    🍫 30% OFF!
+                </span>
+
+                <div class="stock-indicator">
+
+                    <div>
+                        ⚡ Only
+                        <strong>7 left</strong>
+                        today!
+                    </div>
+
+                    <div class="stock-bar">
+
+                        <div
+                            class="stock-fill"
+                            style="width:35%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="special-details">
+
+                <h2>
+                    Chocolate Fudge Sundae
+                </h2>
+
+
+                <div class="special-price-row">
+
+                    <span class="special-original-price">
+                        ₹299
+                    </span>
+
+                    <span class="special-price">
+                        ₹209
+                    </span>
+
+                    <span class="special-discount">
+                        30% OFF
+                    </span>
+
+                </div>
+
+
+                <p class="special-description">
+
+                    Creamy chocolate ice cream
+                    topped with rich chocolate
+                    fudge, crunchy chocolate chips
+                    and a delicious cherry.
+
+                </p>
+
+
+                <div class="special-cta">
+
+                    <button
+                        class="btn btn-special"
+                        onclick="addToCart(7)">
+
+                        🛒 Grab This Deal
+
+                    </button>
+
+                    <button
+                        class="btn-notify"
+                        onclick="alert('We will notify you! 🔔')">
+
+                        🔔
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <h2 class="section-title">
+        Why Choose Frosty Bliss? ✨
+    </h2>
+
+    <p class="section-subtitle">
+        Sweet moments made with quality ingredients
+    </p>
+
+
+    <div class="features-grid">
+
+
+        <div class="feature-card">
+
+            <div
+                class="feature-icon"
+                style="font-size:60px;">
+
+                🍦
+
+            </div>
+
+            <h3>
+                Fresh Every Day
+            </h3>
+
+            <p>
+                Our ice creams are freshly prepared
+                using quality ingredients.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div
+                class="feature-icon"
+                style="font-size:60px;">
+
+                ❤️
+
+            </div>
+
+            <h3>
+                Made With Love
+            </h3>
+
+            <p>
+                Every scoop is prepared with care
+                to give you a delicious experience.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div
+                class="feature-icon"
+                style="font-size:60px;">
+
+                🚚
+
+            </div>
+
+            <h3>
+                Quick Delivery
+            </h3>
+
+            <p>
+                Order your favorite flavors online
+                and get them delivered to your doorstep.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section
+    class="menu"
+    id="products">
+
+    <div class="menu-container">
+
+        <h2 class="section-title">
+            Our Ice Cream Collection 🍨
+        </h2>
+
+        <p class="section-subtitle">
+            Pick your favorite flavor and enjoy every scoop!
+        </p>
+
+
+        <div
+            class="menu-grid"
+            id="product-container">
+
+            <!-- Products are loaded by products.js -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    class="about"
+    id="about">
+
+    <div class="about-content">
+
+
+        <div class="about-text">
+
+            <h2>
+                Our Frosty Story 💕
+            </h2>
+
+            <p>
+
+                Frosty Bliss started with one simple
+                idea — everyone deserves a little
+                happiness in every scoop.
+
+            </p>
+
+            <p>
+
+                We create creamy, delicious ice creams
+                using carefully selected ingredients
+                and exciting flavors.
+
+            </p>
+
+            <p>
+
+                From classic vanilla and chocolate
+                to fruity favorites, there's a flavor
+                for every mood and every moment.
+
+            </p>
+
+
+            <a
+                href="#products"
+                class="btn btn-primary"
+                style="
+                margin-top:1rem;
+                display:inline-block;">
+
+                Explore Our Flavors
+
+            </a>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <div
+                style="
+                font-size:180px;
+                text-align:center;">
+
+                🍦
+
+            </div>
+
+            <div
+                style="
+                font-size:70px;
+                text-align:center;">
+
+                🍓 🍫 🫐
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="newsletter-container">
+
+        <div class="newsletter-content">
+
+            <div class="newsletter-icon">
+                🍦
+            </div>
+
+            <h2>
+                Join the Frosty Club!
+            </h2>
+
+            <p>
+
+                Subscribe for new flavors,
+                special offers and sweet surprises.
+
+            </p>
+
+
+            <form
+                class="newsletter-form"
+                onsubmit="
+                event.preventDefault();
+                alert('Welcome to the Frosty Club! 🍦');
+                ">
+
+                <input
+                    type="email"
+                    class="newsletter-input"
+                    placeholder="Enter your email address"
+                    required>
+
+
+                <button
+                    type="submit"
+                    class="newsletter-submit">
+
+                    Subscribe ✨
+
+                </button>
+
+            </form>
+
+
+            <div class="newsletter-benefits">
+
+                <div class="newsletter-benefit">
+                    Weekly offers
+                </div>
+
+                <div class="newsletter-benefit">
+                    New flavor alerts
+                </div>
+
+                <div class="newsletter-benefit">
+                    Special discounts
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer  class="footer" id="contact">
+
+    <div class="footer-content">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-section">
+
+                <h3>
+                    Frosty Bliss
+                </h3>
+
+                <p>
+                    Delicious ice cream made
+                    to create happy moments.
+                </p>
+
+                <p>
+                    Open Daily: 10am - 10pm
+                </p>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <a href="tel:+919999999999">
+                    📞 +91 99999 99999
+                </a>
+
+                <a href="mailto:hello@frostybliss.com">
+                    ✉️ hello@frostybliss.com
+                </a>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#products">
+                    Ice Creams
+                </a>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="cart.html">
+                    🛒 Shopping Cart
+                </a>
+
+                <a href="login.html">
+                    👤 Login
+                </a>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>
+                    Opening Hours
+                </h3>
+
+                <p>
+                    Monday - Friday:
+                    10am - 10pm
+                </p>
+
+                <p>
+                    Saturday:
+                    10am - 11pm
+                </p>
+
+                <p>
+                    Sunday:
+                    11am - 10pm
+                </p>
+
+                <p
+                    style="
+                    margin-top:1rem;
+                    font-size:0.9rem;">
+
+                    🍨 Fresh scoops available daily!
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Frosty Bliss.
+                Made with ♡ and lots of ice cream.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/products.js"></script>
+
+
+<script>
+
+    function toggleMenu() {
+
+        const nav =
+            document.getElementById("mainNav");
+
+        nav.classList.toggle("active");
+
+    }
+
+</script>
+
+</body>
+
+</html>

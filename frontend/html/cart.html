@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart - Frosty Bliss</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="index.html" class="logo">
+                🍦 Frosty Bliss
+            </a>
+
+            <nav class="nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Ice Creams</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+
+                <a href="cart.html" class="cart-link active">
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </a>
+
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+            </nav>
+
+            <button class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- Cart Page -->
+    <main class="page-container">
+
+        <div class="page-header">
+            <h1>🛒 Your Ice Cream Cart</h1>
+            <p>Review your favorite scoops before placing your order!</p>
+        </div>
+
+
+        <div class="cart-layout">
+
+            <!-- Cart Items -->
+            <section class="cart-section">
+
+                <div id="cart-container">
+                    <!-- Cart items will be loaded by cart.js -->
+                </div>
+
+            </section>
+
+
+            <!-- Order Summary -->
+            <aside class="order-summary">
+
+                <h2>Order Summary 🍨</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="delivery-charge">₹40</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span id="discount">₹0</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cart-total">₹0</span>
+                </div>
+
+                <a href="checkout.html" class="btn btn-primary checkout-btn">
+                    Proceed to Checkout →
+                </a>
+
+                <a href="index.html#products" class="btn btn-secondary continue-btn">
+                    ← Continue Shopping
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <h3>🍦 Frosty Bliss</h3>
+                    <p>
+                        Happiness served one scoop at a time.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+
+                    <a href="index.html">Home</a>
+                    <a href="index.html#products">Ice Creams</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="login.html">Login</a>
+                </div>
+
+                <div class="footer-contact" id="contact">
+                    <h4>Contact</h4>
+
+                    <p>📧 hello@frostybliss.com</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📍 Bhilai, Chhattisgarh</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Frosty Bliss. Made with ❤️ and lots of ice cream.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("mainNav");
+            nav.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
+

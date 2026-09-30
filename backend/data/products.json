@@ -1,0 +1,178 @@
+
+[
+  {
+    "name": "Vanilla Dream",
+    "price": 129,
+    "category": "Classic",
+    "image": "images/vanilla.jpg",
+    "description": "Creamy and smooth vanilla ice cream made with rich milk and real vanilla flavor.",
+    "longDescription": "Vanilla Dream is a timeless classic for ice cream lovers. Its smooth, creamy texture and rich vanilla flavor make every scoop simple, refreshing and delicious.",
+    "ingredients": [
+      "Milk",
+      "Cream",
+      "Sugar",
+      "Vanilla Extract"
+    ],
+    "flavor": "Vanilla",
+    "size": "100 ml",
+    "calories": 180,
+    "tags": [
+      "Classic",
+      "Creamy",
+      "Bestseller"
+    ],
+    "stock": 20,
+    "rating": 4.8
+  },
+  {
+    "name": "Chocolate Fudge",
+    "price": 149,
+    "category": "Chocolate",
+    "image": "images/chocolate.jpg",
+    "description": "Rich chocolate ice cream with a delicious fudgy flavor for chocolate lovers.",
+    "longDescription": "Chocolate Fudge combines a rich chocolate base with a smooth fudgy taste. It is perfect for anyone who enjoys a deep and creamy chocolate experience.",
+    "ingredients": [
+      "Milk",
+      "Cream",
+      "Sugar",
+      "Cocoa",
+      "Chocolate Fudge"
+    ],
+    "flavor": "Chocolate",
+    "size": "100 ml",
+    "calories": 220,
+    "tags": [
+      "Chocolate",
+      "Rich",
+      "Fudgy"
+    ],
+    "stock": 18,
+    "rating": 4.9
+  },
+  {
+    "name": "Strawberry Swirl",
+    "price": 139,
+    "category": "Fruit",
+    "image": "images/strawberry.jpg",
+    "description": "Sweet strawberry ice cream blended with a refreshing strawberry swirl.",
+    "longDescription": "Strawberry Swirl brings together creamy ice cream and a fruity strawberry swirl. Its sweet and refreshing flavor makes it a great choice for warm days.",
+    "ingredients": [
+      "Milk",
+      "Cream",
+      "Sugar",
+      "Strawberry",
+      "Strawberry Sauce"
+    ],
+    "flavor": "Strawberry",
+    "size": "100 ml",
+    "calories": 190,
+    "tags": [
+      "Fruit",
+      "Refreshing",
+      "Sweet"
+    ],
+    "stock": 15,
+    "rating": 4.7
+  },
+  {
+    "name": "Mango Delight",
+    "price": 159,
+    "category": "Fruit",
+    "image": "images/mango.jpg",
+    "description": "A refreshing mango ice cream made for a delicious tropical experience.",
+    "longDescription": "Mango Delight is inspired by the sweet and refreshing taste of ripe mangoes. Its creamy texture and fruity flavor bring a tropical feeling to every scoop.",
+    "ingredients": [
+      "Milk",
+      "Cream",
+      "Sugar",
+      "Mango Pulp",
+      "Mango Flavor"
+    ],
+    "flavor": "Mango",
+    "size": "100 ml",
+    "calories": 200,
+    "tags": [
+      "Mango",
+      "Fruit",
+      "Refreshing"
+    ],
+    "stock": 12,
+    "rating": 4.8
+  },
+  {
+    "name": "Cookies & Cream",
+    "price": 169,
+    "category": "Premium",
+    "image": "images/cookies-cream.jpg",
+    "description": "Creamy vanilla ice cream loaded with crunchy chocolate cookie pieces.",
+    "longDescription": "Cookies & Cream combines smooth vanilla ice cream with crunchy chocolate cookie pieces. Every spoonful gives you a delicious mix of creamy and crunchy textures.",
+    "ingredients": [
+      "Milk",
+      "Cream",
+      "Sugar",
+      "Vanilla",
+      "Chocolate Cookies"
+    ],
+    "flavor": "Cookies & Cream",
+    "size": "100 ml",
+    "calories": 240,
+    "tags": [
+      "Premium",
+      "Crunchy",
+      "Cookies"
+    ],
+    "stock": 16,
+    "rating": 4.9
+  },
+  {
+    "name": "Blueberry Cheesecake",
+    "price": 189,
+    "category": "Premium",
+    "image": "images/blueberry.jpg",
+    "description": "Smooth blueberry cheesecake ice cream with a creamy and fruity taste.",
+    "longDescription": "Blueberry Cheesecake combines a creamy cheesecake-inspired base with a sweet blueberry flavor. It is a premium choice for customers who enjoy fruity and creamy desserts together.",
+    "ingredients": [
+      "Milk",
+      "Cream",
+      "Sugar",
+      "Blueberry",
+      "Cheesecake Flavor"
+    ],
+    "flavor": "Blueberry Cheesecake",
+    "size": "100 ml",
+    "calories": 250,
+    "tags": [
+      "Premium",
+      "Blueberry",
+      "Cheesecake"
+    ],
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "name": "Chocolate Fudge Sundae",
+    "price": 209,
+    "category": "Sundae",
+    "image": "images/chocolate-sundae.jpg",
+    "description": "A delicious chocolate fudge sundae topped with creamy goodness.",
+    "longDescription": "Chocolate Fudge Sundae is a rich dessert experience featuring creamy chocolate ice cream and a delicious fudge topping. It is perfect when you want something extra special.",
+    "ingredients": [
+      "Milk",
+      "Cream",
+      "Sugar",
+      "Cocoa",
+      "Chocolate Fudge",
+      "Chocolate Topping"
+    ],
+    "flavor": "Chocolate Fudge",
+    "size": "150 ml",
+    "calories": 320,
+    "tags": [
+      "Sundae",
+      "Premium",
+      "Chocolate"
+    ],
+    "stock": 8,
+    "rating": 4.9
+  }
+]

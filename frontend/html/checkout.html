@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Frosty Bliss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body> <!-- Header -->
+    <header class="header">
+        <div class="container header-container"> <a href="index.html" class="logo"> 🍦 Frosty Bliss </a>
+            <nav class="nav" id="mainNav"> <a href="index.html">Home</a> <a href="index.html#products">Ice Creams</a> <a
+                    href="index.html#about">About</a> <a href="index.html#contact">Contact</a> <a href="cart.html"> 🛒
+                    Cart <span id="cart-count">0</span> </a> <a href="login.html"> Login </a> </nav> <button
+                class="menu-toggle" onclick="toggleMenu()"> ☰ </button>
+        </div>
+    </header> <!-- Checkout Page -->
+    <main class="page-container">
+        <div class="page-header">
+            <h1>🍨 Checkout</h1>
+            <p>Almost there! Complete your details and enjoy your ice cream.</p>
+        </div>
+        <div class="checkout-layout"> <!-- Customer Details -->
+            <section class="checkout-form-section">
+                <div class="checkout-card">
+                    <h2>Delivery Details 📦</h2>
+                    <form id="checkout-form">
+                        <div class="form-row">
+                            <div class="form-group"> <label for="first-name"> First Name </label> <input type="text"
+                                    id="first-name" name="firstName" placeholder="Enter first name" required> </div>
+                            <div class="form-group"> <label for="last-name"> Last Name </label> <input type="text"
+                                    id="last-name" name="lastName" placeholder="Enter last name" required> </div>
+                        </div>
+                        <div class="form-group"> <label for="email"> Email Address </label> <input type="email"
+                                id="email" name="email" placeholder="Enter email address" required> </div>
+                        <div class="form-group"> <label for="phone"> Phone Number </label> <input type="tel" id="phone"
+                                name="phone" placeholder="Enter 10-digit phone number" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="form-group"> <label for="address"> Delivery Address </label> <textarea id="address"
+                                name="address" rows="4" placeholder="House/Flat No., Street, Area" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"> <label for="city"> City </label> <input type="text" id="city"
+                                    name="city" placeholder="Enter city" required> </div>
+                            <div class="form-group"> <label for="pincode"> PIN Code </label> <input type="text"
+                                    id="pincode" name="pincode" placeholder="Enter PIN code" pattern="[0-9]{6}"
+                                    required> </div>
+                        </div> <!-- Payment -->
+                        <div class="payment-section">
+                            <h2>Payment Method 💳</h2> <label class="payment-option"> <input type="radio"
+                                    name="paymentMethod" value="cod" checked> <span> 💵 Cash on Delivery </span>
+                            </label> <label class="payment-option"> <input type="radio" name="paymentMethod"
+                                    value="online"> <span> 💳 Online Payment </span> </label>
+                            <p class="payment-note"> Online payment can be integrated later using a payment gateway such
+                                as Razorpay. </p>
+                        </div>
+                        <div id="checkout-message" class="form-message"></div> <button type="submit"
+                            class="btn btn-primary place-order-btn"> Place Order 🍦 </button>
+                    </form>
+                </div>
+            </section> <!-- Order Summary -->
+            <aside class="checkout-summary">
+                <div class="checkout-card">
+                    <h2>Your Order 🛒</h2>
+                    <div id="checkout-items"> <!-- Cart items loaded by checkout.js --> </div>
+                    <hr>
+                    <div class="summary-row"> <span>Subtotal</span> <span id="checkout-subtotal">₹0</span> </div>
+                    <div class="summary-row"> <span>Delivery</span> <span id="checkout-delivery">₹40</span> </div>
+                    <div class="summary-row"> <span>Discount</span> <span id="checkout-discount">₹0</span> </div>
+                    <hr>
+                    <div class="summary-total"> <span>Total</span> <span id="checkout-total">₹0</span> </div>
+                </div>
+                <div class="checkout-security">
+                    <div>🔒</div>
+                    <div> <strong>Safe & Secure</strong>
+                        <p> Your order information is securely processed. </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main> <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🍦 Frosty Bliss</h3>
+                    <p> Happiness served one scoop at a time. </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4> <a href="index.html">Home</a> <a href="index.html#products">Ice Creams</a> <a
+                        href="cart.html">Cart</a> <a href="login.html">Login</a>
+                </div>
+                <div class="footer-contact" id="contact">
+                    <h4>Contact</h4>
+                    <p>📧 hello@frostybliss.com</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>📍 Bhilai, Chhattisgarh</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> © 2026 Frosty Bliss. Made with ❤️ and lots of ice cream. </p>
+            </div>
+        </div>
+    </footer> <!-- JavaScript -->
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/checkout.js"></script>
+    <script> function toggleMenu() { const nav = document.getElementById("mainNav"); nav.classList.toggle("active"); } </script>
+</body>
+
+</html>
